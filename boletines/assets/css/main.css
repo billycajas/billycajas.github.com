@@ -1,0 +1,191 @@
+/*
+gris #acbdba
+gaains #cddddd
+oscuro #242e2d
+violeta #7C72A0
+vino #8C2F39
+*/
+/*  */
+html, body{
+    margin:0%;
+    font-family: 'Ubuntu', sans-serif;
+}
+a{
+    text-decoration: none;
+    color: #8C2F39;
+}
+
+img{
+    max-width: 100%;
+}
+
+a:hover{
+    opacity: 0.8;
+    }
+
+.titulo{
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.titulo-jugador{
+    border-bottom-style: solid;
+    border-width: 3px;
+    border-color: #8C2F39;
+    padding-bottom: 1em;
+    font-size: 35px;
+    text-transform: uppercase;
+}
+
+.paragraph{
+    line-height: 1.6em;
+    font-weight: 300;
+}
+
+.container {
+    background: #ADA996;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to bottom, #EAEAEA, #DBDBDB, #F2F2F2, #ADA996);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom , #EAEAEA, #DBDBDB, #F2F2F2, #ADA996); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0%;
+}
+
+.content {
+    max-width: 90%;
+    width: 100%;
+    height: 80vh;
+    background-color: white;
+    /*box-shadow: dif. horizontal dif. vertical  desenfoque  amplitud  color*/
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    border-radius: 15px;
+    position: relative;
+    padding: 1em;
+    overflow: scroll;
+}
+
+.content-table {
+    max-width: 960px;
+    width: 85%;
+    height: 80vh;
+    background-color: white;
+    /*box-shadow: dif. horizontal dif. vertical  desenfoque  amplitud  color*/
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    border-radius: 15px;
+    position: relative;
+    padding: 1.8em;
+    overflow: scroll;
+}
+
+.actions{
+    position: absolute;
+    top: 1em;
+    right: 1em;
+}
+
+.close{
+    height: 30px;
+    width: 30px;
+    color: white;
+    background-color: #8C2F39;
+    border-radius: 50%;
+    display: inline-block;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), rgba(0, 0, 0, 0.23);
+    font-weight: 500;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.table{
+    width: 100%;
+    border-spacing: 0;
+}
+
+.table td, .table th{
+    padding: 8px;
+    text-align: center;
+}
+
+.table tr:nth-child(even) { background-color: #e3e8e7;}
+.fa-star, .fa-star-o{ color: #d6a929;}
+.fa-fa-birthday-cake{ color:#8C2F39;}
+
+.posicion{
+    padding: 10px;
+    background-color: #8C2F39;
+    color: white;
+    border-radius: 5px;
+    margin-right: 1em;
+}
+.posicion-mobiles{
+    display: none;
+}
+
+.nacimiento{
+    color: #8C2F39;
+    font-weight: bold;
+    display: inline-block;
+}
+.imagen-jugador{
+    float: left;
+    margin-right: 1em;
+    height: 300px;
+}
+
+@media (min-height:550px){
+     .content, .content-table{
+         height: 80vh;
+        padding: 1.8em;
+    }
+    .container{
+        background: #ADA996;  /* fallback for old browsers */
+        background: -webkit-linear-gradient(to bottom, #EAEAEA, #DBDBDB, #F2F2F2, #ADA996);  /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to bottom , #EAEAEA, #DBDBDB, #F2F2F2, #ADA996); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        height: 100vh;
+        align-items: center;
+        justify-content: center;
+        padding: 0%;
+        }
+    .nacimiento{
+        margin-top: 1.5em;
+    }
+    }
+@media (max-width:600px){
+    .content, .content-table{
+        padding: 1em;
+    }
+    .posicion{
+        display: none;
+
+    }
+    td{
+        display: block;
+        width: 100%;
+        }
+        td:nth-of-type(1){
+        font-size: 2em;
+        font-weight: bold;
+        color: #8C2F39;
+        margin-top: 25px;
+        }
+        td:nth-of-type(8){
+            margin-bottom: 25px;
+        }
+        th{
+        display: none;
+    }
+    .posicion-mobiles{
+        display: block;
+        color: #8C2F39;
+        text-align: center;
+        font-size: 2em;
+        font-weight: bold;
+        }
+    .titulo-jugador{
+        text-align: center;
+    }
+}
